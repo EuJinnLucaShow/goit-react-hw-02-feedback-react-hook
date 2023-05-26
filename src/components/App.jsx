@@ -36,14 +36,14 @@ function App() {
 
   return (
     <AppContainer>
-      <Section title="Review Widget 📝">
+      <Section title="Review Widget📝">
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
           onLeaveFeedback={handleButtonClick}
         />
       </Section>
 
-      <Section title="Statistics 📊">
+      <Section title="Statistics📊">
         {totalFeedback === 0 ? (
           <Notification message="There is no feedback" />
         ) : (
